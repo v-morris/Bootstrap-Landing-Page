@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page Layout</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=#navScrollspy>
+
+    <nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top">
+        <a href="#top" class="navbar-brand">Brand Name Here!</a>
+        <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target='#navbarNav'
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" id="navScrollspy">
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <section id="top" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-2">Changing the World</h1>
+            <p class="display-4">One Website at a Time</p>
+            <p class="lead"></p>
+            <p class="lead"></p>
+            <p><strong>Insert more text here:</strong></p>
+            <a href="#" class="btn btn-lg btn-primary">Button</a>
+            <a href="#" class="btn btn-lg btn-primary">Button</a>
+        </div>
+    </section>
+
+    <!-- SECTION 1 -->
+    <div class="container">
+        <section id="portfolio">
+            <h2 class="display-4">Portfolio</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="https://placeimg.com/300/150/any" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placeimg.com/300/150/any" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placeimg.com/300/150/any" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This card has even longer content than the first to show that equal
+                            height action.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- SECTION 2 -->
+    <div class="container">
+        <section id="about">
+            <h2 class="display-4">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur
+                tellus ante. Pellentesque efficitur condimentum diam, nec dapibus lorem
+                commodo id. Praesent feugiat, velit in sagittis pharetra, leo
+                augue commodo enim, sit amet pharetra lacus neque in nulla. In nisi turpis,
+                mattis id tristique vitae, vestibulum eu magna. Nam ac justo in sem vehicula
+                vehicula. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                per inceptos himenaeos. Donec orci leo, molestie quis rhoncus id, volutpat sit
+                amet purus. Maecenas a ullamcorper augue, non mattis nisi. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p>In congue, orci ut lacinia elementum, risus mi egestas purus,
+                quis finibus urna nisi eu quam. Aenean non dapibus mauris, quis commodo lectus.
+                Sed sollicitudin quis erat ac aliquet. Aenean imperdiet libero eget tortor luctus
+                posuere. Fusce sapien lorem, luctus eget pulvinar non, tincidunt nec velit.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </section>
+    </div>
+    <!-- SECTION 3 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="contact">
+                    <h2 class="display-4">Contact</h2>
+                    <p>Have a question? Send me an email here!</p>
+                    <form>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Name</label>
+                            <input type="text" class="form-control" placeholder="John Smith">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="font-weight-bold">Email</label>
+                            <input type="email" class="form-control" placeholder="johnsmith@gmail.com">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="font-weight-bold">Message</label>
+                            <textarea rows="4" class="form-control" placeholder="Write your message here!"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="contact2">
+
+                    <h5>Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li>Jane Doe</li>
+                        <li>janedoe@gmail.com</li>
+                        <li>555-555-5555</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
